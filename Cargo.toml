@@ -10,3 +10,9 @@ image = "*"
 rustacuda = { path = "../RustaCUDA" }
 rustacuda_derive = { path = "../RustaCUDA/rustacuda_derive/" }
 rustacuda_core = { path = "../RustaCUDA/rustacuda_core/" }
+
+
+
+[dependencies.common]
+path = "./common"
+

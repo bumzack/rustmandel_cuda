@@ -68,11 +68,16 @@ dependencies = [
 ]
 
 [[package]]
-name = "cuda_kernel2"
+name = "common"
+version = "0.1.0"
+
+[[package]]
+name = "cuda_kernel_mandel"
 version = "0.1.0"
 dependencies = [
+ "common 0.1.0",
  "ptx-builder 0.5.3 (registry+https://github.com/rust-lang/crates.io-index)",
- "ptx-support 0.1.0",
+ "ptx-support 0.1.0 (git+https://github.com/denzp/rust-ptx-support)",
 ]
 
 [[package]]
@@ -164,13 +169,15 @@ dependencies = [
 [[package]]
 name = "ptx-support"
 version = "0.1.0"
+source = "git+https://github.com/denzp/rust-ptx-support#167c1baf899294f71bc222a6142d4033c325e998"
 dependencies = [
- "ptx-support-macros 0.1.0",
+ "ptx-support-macros 0.1.0 (git+https://github.com/denzp/rust-ptx-support)",
 ]
 
 [[package]]
 name = "ptx-support-macros"
 version = "0.1.0"
+source = "git+https://github.com/denzp/rust-ptx-support#167c1baf899294f71bc222a6142d4033c325e998"
 dependencies = [
  "failure 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "nom 4.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -376,6 +383,8 @@ dependencies = [
 "checksum num-traits 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)" = "6ba9a427cfca2be13aa6f6403b0b7e7368fe982bfa16fccc450ce74c46cd9b32"
 "checksum proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)" = "cf3d2011ab5c909338f7887f4fc896d35932e29146c12c8d01da6b22a80ba759"
 "checksum ptx-builder 0.5.3 (registry+https://github.com/rust-lang/crates.io-index)" = "6f428e7556c0729c0c5653713ee4a83fd2391c85f6d245f047eadf911e1cab20"
+"checksum ptx-support 0.1.0 (git+https://github.com/denzp/rust-ptx-support)" = "<none>"
+"checksum ptx-support-macros 0.1.0 (git+https://github.com/denzp/rust-ptx-support)" = "<none>"
 "checksum quote 0.6.13 (registry+https://github.com/rust-lang/crates.io-index)" = "6ce23b6b870e8f94f81fb0a363d65d86675884b34a09043c81e5562f11c1f8e1"
 "checksum rand 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)" = "552840b97013b1a26992c11eac34bdd778e464601a4c2054b5f0bff7c6761293"
 "checksum rand_core 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)" = "7a6fdeb83b075e8266dcc8762c22776f6877a63111121f5f8c7411e5be7eed4b"
