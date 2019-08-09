@@ -1,0 +1,12 @@
+[package]
+name = "cuda_kernel2"
+version = "0.1.0"
+authors = ["bumzack"]
+edition = "2018"
+
+[build-dependencies]
+# ptx-builder = { path = "../../rust-ptx-builder" }
+ptx-builder = "0.5"
+
+[target.'cfg(target_os = "cuda")'.dependencies]
+ptx-support = { path = "../nvptx-support/ptx-support" }
