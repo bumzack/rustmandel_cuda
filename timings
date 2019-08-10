@@ -1,4 +1,4 @@
-RELEASE MODE
+RELEASE MODE  800x600
 
         ---------- SINGLE CORE  --------------------
         single core 3.980306517s
@@ -10,7 +10,7 @@ RELEASE MODE
         cuda   88.363922ms
 
 
-DEBUG MODE
+DEBUG MODE      800x600
 
         ---------- SINGLE CORE  --------------------
         single core 7.456497183s
@@ -20,4 +20,16 @@ DEBUG MODE
 
         ---------- CUDA   --------------------
         cuda   177.153443ms
+
+
+RELEASE MODE  3000x2000
+        ---------- SINGLE CORE  --------------------
+        single core 48.932889963s
+
+        ---------- MULTI CORE  --------------------
+        multi core (8 threads) 6.939345873s
+
+        ---------- CUDA   --------------------
+        block = (16, 1, 1), grid = (188, 2000, 1)
+        cuda   262.938134ms
 
