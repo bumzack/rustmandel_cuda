@@ -12,8 +12,8 @@ mod mandel_single_core;
 mod mandel_utils;
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let w = 800;
-    let h = 600;
+    let w = 300;
+    let h = 200;
 
     println!("---------- SINGLE CORE  --------------------");
     mandel_single(w, h);

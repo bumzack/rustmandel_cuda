@@ -31,7 +31,7 @@ pub fn mandel_cuda(w: u32, h: u32) -> Result<(), Box<dyn Error>> {
     let pixels_vec = vec![0f32; w as usize * h as usize * 3];
     let mut pixels = DeviceBuffer::from_slice(&pixels_vec)?;
 
-    let b = (512, 1, 1);
+    let b = (16, 1, 1);
     let block = (b.0 as u32, b.1 as u32, b.2 as u32);
 
     let g = (
