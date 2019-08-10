@@ -1,0 +1,23 @@
+RELEASE MODE
+
+        ---------- SINGLE CORE  --------------------
+        single core 3.980306517s
+
+        ---------- MULTI CORE  --------------------
+        multi core (8 threads) 571.536401ms
+
+        ---------- CUDA   --------------------
+        cuda   88.363922ms
+
+
+DEBUG MODE
+
+        ---------- SINGLE CORE  --------------------
+        single core 7.456497183s
+
+        ---------- MULTI CORE  --------------------
+        multi core (8 threads) 1.50927656s
+
+        ---------- CUDA   --------------------
+        cuda   177.153443ms
+
